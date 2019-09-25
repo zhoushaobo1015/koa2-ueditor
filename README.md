@@ -29,7 +29,7 @@ router.all('/editor/controller', ueditor('public'))
 // 需要传一个数组：静态目录和 UEditor 配置对象
 // 比如要修改上传图片的类型、保存路径
 router.all('/editor/controller', ueditor(['public', {
-	"imageAllowFiles": [".png", ".jpg", ".jpeg"]
+	"imageAllowFiles": [".png", ".jpg", ".jpeg"],
 	"imagePathFormat": "/upload/ueditor/image/{yyyy}{mm}{dd}/{filename}"  // 保存为原文件名
 }]))
 ```
